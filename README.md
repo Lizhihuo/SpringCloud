@@ -1,2 +1,2 @@
 # cloud
-Spring-Cloud
+cloud-config
