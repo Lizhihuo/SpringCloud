@@ -1,2 +1,2 @@
-# cloud
+# springcloud_demo
 cloud-config
