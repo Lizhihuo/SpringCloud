@@ -31,3 +31,7 @@ eureka:
     hostname: order
     prefer-ip-address: true
     instance-id: 192.168.18.15:order  #指定服务的ID
+
+# 端口
+server:
+  port: 9088
