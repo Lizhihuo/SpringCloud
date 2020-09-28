@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: product #服务名称
+
+  #热部署
+  devtools:
+    restart:
+      enabled: true #设置开启热部署
+      additional-paths: src/main/java
+      exclude: WEB-INF/** #重启目录
+  freemarker:
+    cache: false #页面不加载缓存
+
+  # jpa调试参数
+  jpa:
+    show-sql: true
+
+  #数据库链接
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wechat_order?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+
+# eureka注册
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: product
+    prefer-ip-address: true
+    instance-id: 192.168.18.15:product  #指定服务的ID
+
+# 端口
+server:
+  port: 9099
