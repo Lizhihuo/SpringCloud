@@ -35,3 +35,6 @@ eureka:
 # 端口
 server:
   port: 9088
+
+env:
+  dev
