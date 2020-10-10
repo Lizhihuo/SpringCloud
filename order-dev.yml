@@ -37,4 +37,4 @@ server:
   port: 9088
 
 env:
-  dev
+  dev1
