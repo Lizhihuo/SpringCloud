@@ -2,6 +2,15 @@ spring:
   application:
     name: product #服务名称
 
+  rabbitmq:
+    cache:
+      channel:
+        checkout-timeout: 1s
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
   #热部署
   devtools:
     restart:
