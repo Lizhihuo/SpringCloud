@@ -1,6 +1,6 @@
 spring:
   application:
-    name: order #服务名称
+    name: api-gateway #服务名称
   
   redis:
     host: localhost
@@ -41,9 +41,9 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
   instance:
-    hostname: order
+    hostname: api-gateway
     prefer-ip-address: true
-    instance-id: 192.168.18.15:order  #指定服务的ID
+    instance-id: 192.168.18.15:api-gateway  #指定服务的ID
 
 # 端口
 server:
